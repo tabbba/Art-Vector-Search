@@ -235,8 +235,8 @@ st.markdown("""
 
 load_dotenv()
 
-QDRANT_URL = os.getenv("QDRANT_URL")
-QDRANT_API_KEY = os.getenv("QDRANT_API")
+QDRANT_API = os.getenv("QDRANT_API")
+QDRANT_URL = "https://cd8db105-544d-457f-aa1a-97d4475c1f56.europe-west3-0.gcp.cloud.qdrant.io"
 
 collection_name = "dino_embedding_collection"
 
@@ -251,7 +251,7 @@ if 'similar_records' not in st.session_state:
 def get_client():
     return QdrantClient(
         url=QDRANT_URL,
-        api_key=QDRANT_API_KEY
+        api_key=QDRANT_API
     )
 
 def add_header(title, emoji, description=None):
