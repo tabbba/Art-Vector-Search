@@ -8,9 +8,6 @@ This project is a visual similarity search engine for paintings, powered by the 
 
 - 🔍 Similarity search between artworks using DINO embeddings
 - 🧠 Precomputed Qdrant snapshot included — no embedding required at runtime
-- ☁️ Deployable to [Streamlit Cloud](https://streamlit.io/cloud)
-- 🔐 Uses `.env` locally and `st.secrets` on Streamlit Cloud
-
 ---
 
 ## 📁 Project Structure
